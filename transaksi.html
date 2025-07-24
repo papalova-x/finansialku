@@ -1,0 +1,62 @@
+<section id="transactions" class="tab-content bg-white p-6 rounded-xl shadow-lg mb-6">
+  <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+    <i class="ph-receipt-fill mr-3 text-emerald-600"></i>Catat Transaksi Baru
+  </h2>
+  <form id="transactionForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="type" class="block text-gray-700 font-semibold mb-2">Jenis Transaksi</label>
+      <select id="type" name="type" class="w-full border-gray-300 rounded-md shadow-sm">
+        <option value="income">Pemasukan</option>
+        <option value="expense">Pengeluaran</option>
+      </select>
+    </div>
+    <div>
+      <label for="amount" class="block text-gray-700 font-semibold mb-2">Jumlah</label>
+      <input type="number" id="amount" name="amount" class="w-full border-gray-300 rounded-md shadow-sm" required>
+    </div>
+    <div>
+      <label for="description" class="block text-gray-700 font-semibold mb-2">Deskripsi</label>
+      <input type="text" id="description" name="description" class="w-full border-gray-300 rounded-md shadow-sm">
+    </div>
+    <div>
+      <label for="date" class="block text-gray-700 font-semibold mb-2">Tanggal</label>
+      <input type="date" id="date" name="date" class="w-full border-gray-300 rounded-md shadow-sm" required>
+    </div>
+    <div>
+      <label for="category" class="block text-gray-700 font-semibold mb-2">Kategori</label>
+      <select id="category" name="category" class="w-full border-gray-300 rounded-md shadow-sm">
+        <option value="gaji">Gaji</option>
+        <option value="makan">Makan</option>
+        <option value="hiburan">Hiburan</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+    </div>
+    <div class="flex items-end">
+      <button type="submit" class="bg-emerald-600 text-white px-6 py-2 rounded-md hover:bg-emerald-700 shadow-md">
+        Simpan Transaksi
+      </button>
+    </div>
+  </form>
+  <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-5 flex items-center">
+    <i class="ph-clock-counter-clockwise-fill mr-2 text-gray-600"></i>Riwayat Transaksi
+  </h3>
+  <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Deskripsi</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Kategori</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jumlah</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tipe</th>
+          <th class="px-6 py-3"></th>
+        </tr>
+      </thead>
+      <tbody id="transactionList" class="bg-white divide-y divide-gray-200">
+        <tr>
+          <td colspan="6" class="text-center text-gray-500 py-6">Belum ada transaksi.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<section id="expense" class="tab-content bg-white p-6 rounded-xl shadow-lg mb-6">
+  <h2 class="text-3xl font-bold text-red-700 mb-6 flex items-center">
+    <i class="ph-trend-down-bold mr-3"></i>Pencatatan Pengeluaran
+  </h2>
+  <form id="expenseForm" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div>
+      <label for="expenseAmount" class="block text-gray-700 font-semibold mb-2">Jumlah</label>
+      <input type="number" id="expenseAmount" name="expenseAmount" class="w-full border-gray-300 rounded-md shadow-sm" required>
+    </div>
+    <div>
+      <label for="expenseDescription" class="block text-gray-700 font-semibold mb-2">Deskripsi</label>
+      <input type="text" id="expenseDescription" name="expenseDescription" class="w-full border-gray-300 rounded-md shadow-sm">
+    </div>
+    <div>
+      <label for="expenseDate" class="block text-gray-700 font-semibold mb-2">Tanggal</label>
+      <input type="date" id="expenseDate" name="expenseDate" class="w-full border-gray-300 rounded-md shadow-sm" required>
+    </div>
+    <div class="flex items-end">
+      <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 shadow-md">
+        Simpan Pengeluaran
+      </button>
+    </div>
+  </form>
+</section>

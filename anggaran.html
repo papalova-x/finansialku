@@ -1,0 +1,39 @@
+<section id="budgets" class="tab-content bg-white p-6 rounded-xl shadow-lg mb-6">
+  <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+    <i class="ph-clipboard-text-fill mr-3 text-indigo-600"></i>Kelola Anggaran Bulanan
+  </h2>
+  <form id="budgetForm" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div>
+      <label for="budgetCategory" class="block text-gray-700 font-semibold mb-2">Kategori</label>
+      <select id="budgetCategory" name="budgetCategory" class="w-full border-gray-300 rounded-md shadow-sm">
+        <option value="makan">Makan</option>
+        <option value="transportasi">Transportasi</option>
+        <option value="hiburan">Hiburan</option>
+      </select>
+    </div>
+    <div>
+      <label for="budgetAmount" class="block text-gray-700 font-semibold mb-2">Jumlah</label>
+      <input type="number" id="budgetAmount" name="budgetAmount" class="w-full border-gray-300 rounded-md shadow-sm" required>
+    </div>
+    <div class="flex items-end">
+      <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 shadow-md">
+        Tambah Anggaran
+      </button>
+    </div>
+  </form>
+  <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Kategori</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jumlah</th>
+        </tr>
+      </thead>
+      <tbody id="budgetList" class="bg-white divide-y divide-gray-200">
+        <tr>
+          <td colspan="2" class="text-center text-gray-500 py-6">Belum ada anggaran.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

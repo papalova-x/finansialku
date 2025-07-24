@@ -1,0 +1,17 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+.tab-link {
+  text-decoration: none;
+  color: #4A5568;
+  font-weight: 500;
+}
+.tab-link:hover {
+  color: #2B6CB0;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}

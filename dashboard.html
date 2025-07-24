@@ -1,0 +1,44 @@
+<section id="dashboard" class="tab-content active bg-white p-6 rounded-xl shadow-lg mb-6">
+  <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+    <i class="ph-gauge-fill mr-3 text-emerald-600"></i>Ringkasan Keuangan Anda
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="card bg-gradient-to-br from-emerald-500 to-emerald-600 text-white p-6 rounded-xl shadow-lg text-center">
+      <i class="ph-currency-dollar-simple-fill text-5xl mb-2 opacity-80"></i>
+      <p class="text-lg font-light">Total Pemasukan (Bulan Ini)</p>
+      <p id="totalIncome" class="text-4xl font-extrabold mt-2">Rp 0</p>
+    </div>
+    <div class="card bg-gradient-to-br from-red-500 to-red-600 text-white p-6 rounded-xl shadow-lg text-center">
+      <i class="ph-shopping-cart-simple-fill text-5xl mb-2 opacity-80"></i>
+      <p class="text-lg font-light">Total Pengeluaran (Bulan Ini)</p>
+      <p id="totalExpense" class="text-4xl font-extrabold mt-2">Rp 0</p>
+    </div>
+    <div class="card bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-xl shadow-lg text-center">
+      <i class="ph-wallet-fill text-5xl mb-2 opacity-80"></i>
+      <p class="text-lg font-light">Saldo Bersih (Bulan Ini)</p>
+      <p id="netBalance" class="text-4xl font-extrabold mt-2">Rp 0</p>
+    </div>
+  </div>
+  <div class="bg-white p-6 rounded-xl shadow-lg">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+      <i class="ph-chart-bar-fill mr-2 text-indigo-600"></i>Grafik Pemasukan & Pengeluaran
+    </h3>
+    <canvas id="financeChart" class="w-full h-64"></canvas>
+  </div>
+  <div class="bg-white p-6 rounded-xl shadow-lg mt-8">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+      <i class="ph-calendar-week-fill mr-2 text-purple-600"></i>Kebutuhan Mingguan
+    </h3>
+    <ul id="weeklyNeeds" class="list-disc list-inside text-gray-700">
+      <li>Membayar tagihan listrik</li>
+      <li>Anggaran makan mingguan</li>
+      <li>Tabungan mingguan minimal Rp 100.000</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-xl shadow-lg mt-8">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+      <i class="ph-lightbulb-fill mr-2 text-yellow-500"></i>Tips Keuangan Minggu Ini
+    </h3>
+    <p class="text-gray-700">Cobalah menggunakan metode 50/30/20 dalam pengelolaan keuangan.</p>
+  </div>
+</section>

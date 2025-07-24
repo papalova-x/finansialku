@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>FinansiaKu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/dist/phosphor.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="bg-emerald-700 text-white p-4 shadow-xl">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold flex items-center">
+        <i class="ph-chart-line-up-fill mr-3 text-4xl"></i>FinansiaKu
+      </h1>
+    </div>
+  </header>
+  <nav class="bg-white shadow-md p-2 sticky top-0 z-10">
+    <div class="container mx-auto flex flex-wrap justify-around gap-2 text-sm">
+      <button onclick="loadPage('dashboard.html')" class="tab-button text-gray-700 hover:text-emerald-600">Dasbor</button>
+      <button onclick="loadPage('transaksi.html')" class="tab-button text-gray-700 hover:text-emerald-600">Transaksi</button>
+      <button onclick="loadPage('pengeluaran.html')" class="tab-button text-gray-700 hover:text-red-600">Pengeluaran</button>
+      <button onclick="loadPage('pemasukan.html')" class="tab-button text-gray-700 hover:text-green-600">Pemasukan</button>
+      <button onclick="loadPage('anggaran.html')" class="tab-button text-gray-700 hover:text-indigo-600">Anggaran</button>
+      <button onclick="loadPage('target.html')" class="tab-button text-gray-700 hover:text-purple-600">Target</button>
+      <button onclick="loadPage('kategori.html')" class="tab-button text-gray-700 hover:text-yellow-600">Kategori</button>
+      <button onclick="loadPage('prestasi.html')" class="tab-button text-gray-700 hover:text-blue-600">Prestasi</button>
+    </div>
+
+  </nav>
+  <main id="content" class="container mx-auto p-4"></main>
+  <footer class="bg-gray-900 text-gray-300 p-6 text-center mt-auto shadow-inner">
+    <p class="text-sm">Dari Kita Untuk Kita 𝕭𝖄 𝕵𝖚𝖆𝖓</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
